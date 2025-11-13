@@ -1,23 +1,25 @@
 
 
 body {
-  background-color: darkred;
+  background-color: black;
 }
 
 h1 {
   color: white;
+  font-size: 35px;
   text-align: center;
 }
 
 h2 {
-  color: white;
+  color: red;
+  font-size: 30px;
   text-align: center;
 }
 
 p {
-	color: white;
+	color: red;
   font-family: "Comic Sans MS", "Comic Sans";
-  font-size: 30px;
+  font-size: 25px;
   width: 800px;
   margin: 0 auto;
   text-align: center;
