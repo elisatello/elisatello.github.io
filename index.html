@@ -36,6 +36,44 @@ Gods Band
 A young film composer and drummer currently studying Film Scoring at Berklee College of Music. An avid audience member of iconic works including the films Interstellar, Inception, Dune and the TV series Game of Thrones, Westworld, Sherlock. Has contributed significantly to the streaming counts of renowned film composers such as <b>Hans Zimmer, Ramin Djawadi, and John Williams</b>. Has remotely "supervised" major award ceremonies including the Oscars, Grammys, and Emmys on multiple occasions.
 </p>
 <img src="Concert.gif" alt="The Band">
+<script>
+function setup() {
+  createCanvas(150,150);
+}
+
+function drawObject(x, y, s) {
+  push();
+  translate(x, y);
+  scale(s);
+  fill(0);
+  rect(40, 10,  60, 10);
+  rect(40, 10,  5, 50);
+  rect(100, 10,  5, 50);
+  ellipse(30, 60, 30, 20);
+  ellipse(90, 60, 30, 20);
+  pop();
+}
+  
+function draw() {
+  fill(200,40,10);
+  ellipse(75, 75, 75, 75);
+  drawObject(42, 54, 0.5);
+}
+
+function mousePressed(){
+  let p=press(mouseX,mouseY,75,75)
+  if (d < 37.5) {
+     if (sound.paused) {
+          sound.play();
+        } else {
+          sound.pause();
+          sound.currentTime = 0; 
+        }
+  }
+}
+</script>
 </body>
 </html>
+
+
 
